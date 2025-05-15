@@ -1,7 +1,7 @@
 #!/bin/bash
 
-name1=$value1
-name2=$value2
+name1=$1
+name2=$2
 
 echo "$name1:: Hey $name2, How are you?"
 echo "$name2:: Hello $name1, I am fine. How are you doing"
