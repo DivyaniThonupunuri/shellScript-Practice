@@ -7,3 +7,6 @@ echo "$pwd"
 echo "$#"
 echo "$0"
 echo "$user"
+echo "$$"
+sleep 10 
+echo "$$"
