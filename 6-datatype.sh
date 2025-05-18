@@ -4,4 +4,5 @@
 num1=13
 num2=25
 
-echo "addition of 2 numbers is ($num1+$num2) "
+sum=(($num1+$num2))
+echo "addition of 2 numbers is $sum "
