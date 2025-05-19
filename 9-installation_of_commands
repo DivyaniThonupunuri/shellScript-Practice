@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#for checking root access 
+
+USERID=$(id -u)
