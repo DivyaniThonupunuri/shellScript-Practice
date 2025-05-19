@@ -7,6 +7,7 @@ num=$1
  then 
 
  echo "num $num is greater than 10"
-
+ else 
+ echo "num $num is less than 10"
  
  fi 
