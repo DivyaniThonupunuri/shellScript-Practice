@@ -5,8 +5,8 @@
 num =$1 
  if [ $num -gt 10 ]
  then 
- 
- echo (" num "$num" is greater than 10")
+
+ echo "num $num is greater than 10"
 
  
  fi 
