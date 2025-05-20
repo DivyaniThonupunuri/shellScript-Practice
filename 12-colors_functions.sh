@@ -57,6 +57,6 @@ dnf list installed nginx
 dnf install nginx -y 
     VALIDATE $? "nginx"
     else 
-        echo " $Y nginx is installed .... $G SUCCESS $N "
+        echo -e " $Y nginx is installed .... $G SUCCESS $N "
     fi
 
