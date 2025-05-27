@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-Source_directory="/D/Divyani/app-logs"
+Source_directory="/var/log/applogs"
 files_to_delete=$(find $Source_directory -name "*.log" -mtime +14)
 
 while IFS= read -r filepath
