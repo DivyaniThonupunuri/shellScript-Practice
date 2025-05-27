@@ -13,12 +13,6 @@ Source_directory="/home/ec2-user/applogs"
 mkdir $LOGS_FOLDER
 echo "Script started executing at $(date)" | tee -a $LOG_FILE
 
-files_to_delete=$(find $Source_directory -name "*.log" -mtime +14)
-
-while IFS= read -r filepath
-do 
-    rm -rf $filepath
-done <<< $files_to_delete
 
 if [ $userid -ne 0 ]
 then 
@@ -27,3 +21,11 @@ then
 else 
     echo -e "$G you are running with root " | tee -a $LOG_FILE
 fi
+
+files_to_delete=$(find $Source_directory -name "*.log" -mtime +14)
+
+while IFS= read -r filepath
+do 
+    rm -rf $filepath
+    echo "$R files deleted are ...$filepath $N"
+done <<< $files_to_delete
