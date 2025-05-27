@@ -2,6 +2,7 @@
  #-v is used to remove filesystem line 
 Disk_usage=$(df -hT | grep -v Filesystem)
 Disk_thresold=5
+msg=""
 
 while IFS= read line 
 do
